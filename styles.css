@@ -1,0 +1,130 @@
+body{
+  background-color: white;
+  height: 100vh;
+  font-family: 'Quicksand', serif;
+}
+h4{
+  color:#30475e;
+  margin: 0 0 0 0 ;
+  padding: 0 0 0 0;
+  text-align: center;
+  position:relative;
+  right: 10px;
+}
+
+
+.CurrentParameter{   /*This edits the display of the current value paramenters are taking */
+  display: block;
+  text-align: left;
+  margin:0 0 5% 3%;
+  left:0;
+}
+
+.IsinContainer{
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 0 20px;
+  position: absolute;
+  min-width: 70vw;
+  height: 90vh;
+  left:15vw;
+  right:15vw;
+  top:10vh;
+}
+.AnimationWrapper{
+  height: 80%;
+}
+.AnimationContainer{
+  float: right;
+  position:relative;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+.AnimationControllers{
+  float:left;
+  background-color: white;
+  width: 47%;
+  height: 95%;
+  position:relative;
+  bottom: 0;
+  margin-bottom:0;
+  margin-left: 3%;
+  padding:0;
+}
+.number{
+  position: relative;
+  background-color: white;
+  display: inline-block;
+
+}
+#isinModelAnimation{      /*Edit the display of the Ising Model Animation*/
+  position: absolute;     /*Change Position to be absolute with respect to parent */
+  right:0;                /*Aligning position with the right down corner */
+  bottom:0;
+}
+.header{
+  text-align: center;
+  background-color: #222831;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0 60vh 0;
+}
+
+.headerTittle{
+  color:#30475e;
+  font-family: 'Quicksand', serif;
+  margin: 5vh 0 5vh 0;
+
+}
+
+.Observable{
+  display: inline;
+  width: 20%;
+  text-align: center;
+  
+}
+
+.SliderContainer {
+  width: 100%; /* Width of the outside container */
+  margin-bottom: 0%;
+  text-align: left;
+}
+.HP{
+  text-align: right;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 85%; /* Full-width */
+  height: 7px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  margin: 3% 0 3% 0;
+}
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #003467; /*  background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #003467; /* background */
+  cursor: pointer; /* Cursor on hover */
+}
