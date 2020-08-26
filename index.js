@@ -61,7 +61,21 @@ function UpdateGridArray(beta){
     }
   }
 };
-
+function ColorGrid(){
+  for (var i = 0; i <cols; i++) {
+    for(var j = 0; j <rows; j++){
+      var x=i*scale;
+      var y=j*scale;
+        if ((SpinGridArray[i][j]) == 1){
+            ctx.fillStyle="white"
+          }
+        else{
+            ctx.fillStyle="black";
+        }
+        ctx.fillRect(x,y,scale,scale);
+    }
+  }
+}
 
 function WarmUpGrid(shots,beta){
   for (var i = 0; i < shots; i++) {
@@ -99,21 +113,7 @@ function GridMCMCStep(n,m,beta){
   }
 }
 
-function ColorGrid(){
-  for (var i = 0; i <cols; i++) {
-    for(var j = 0; j <rows; j++){
-      var x=i*scale;
-      var y=j*scale;
-        if ((SpinGridArray[i][j]) == 1){
-            ctx.fillStyle="white"
-          }
-        else{
-            ctx.fillStyle="black";
-        }
-        ctx.fillRect(x,y,scale,scale);
-    }
-  }
-}
+
 function UpdateObservables(beta){
   var Observables = GetEnergyAndMagnet()
   var Energy = Observables[0];
